@@ -142,7 +142,7 @@ void Task0_Init(void){
 // Inputs:  none
 // Outputs: none
 void Task0(void){
-  static int32_t soundSum = 0;
+  static int32_t soundSum  = 0;
   static int time = 0;// units of microphone sampling rate
   int32_t soundAvg;
   int i;
@@ -480,12 +480,12 @@ int main(void){
   EnableInterrupts(); // interrupts needed for grader to run
   while(1){
     /*
-    Task0: desired time between executions is 1000µs (starter code runs at 100,000µs)
-    Task1: desired time between executions is 100,000µs
-    Task2: desired time between executions is 1,000,000µs
-    Task3: desired time between executions is 100,000µs
-    Task4: desired time between executions is 100,000µs
-    Task5: desired time between executions is 1,000,000µs
+    Task0: desired time between executions is 1000Âµs (starter code runs at 100,000Âµs)
+    Task1: desired time between executions is 100,000Âµs
+    Task2: desired time between executions is 1,000,000Âµs
+    Task3: desired time between executions is 100,000Âµs
+    Task4: desired time between executions is 100,000Âµs
+    Task5: desired time between executions is 1,000,000Âµs
     */
     for(int i=1; i<101; i++){ // run for 100 millisec
       Task0();  // sample microphone
